@@ -65,30 +65,15 @@ If you want to have ObjectId represented as String, annotate your field with @Id
 Dependency.
 ------
 
-Maven
-
-    <dependency>
-      <groupId>fr.javatic.mongo</groupId>
-      <artifactId>mongo-jackson-codec</artifactId>
-      <version>3.2.2__0.5</version>
-      <scope>compile</scope>
-    </dependency>
-
 Gradle
 
     repositories {
-        maven { url "https://dl.bintray.com/ylemoigne/maven" }
+        maven { url 'https://jitpack.io' }
     }
 
     dependencies {
-        compile 'fr.javatic.mongo:mongo-jackson-codec:3.2.2__0.5'
+        compile 'com.github.21Joakim:mongo-jackson-codec:df1a3250265c0e2c8676f86c7383e71c3a0f972f'
     }
-
-SBT
-
-    resolvers += "ylemoigne" at "https://dl.bintray.com/ylemoigne/maven"
-
-    libraryDependencies += "fr.javatic.mongo" % "mongo-jackson-codec" % "3.2.2__0.5"
 
 Changelog
 ----------
